@@ -31,9 +31,10 @@ import org.axonframework.unitofwork.UnitOfWork;
 import org.axonframework.unitofwork.UnitOfWorkListenerAdapter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.util.Assert;
+//import org.springframework.util.Assert;
 
 import java.util.UUID;
+import org.axonframework.common.Assert;
 
 /**
  * <p>Command handler that can be used to create and update Contacts. It can also be used to register and remove

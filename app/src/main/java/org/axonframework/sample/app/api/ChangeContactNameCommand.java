@@ -16,7 +16,8 @@
 
 package org.axonframework.sample.app.api;
 
-import org.springframework.util.Assert;
+//import org.springframework.util.Assert;
+
 
 /**
  * <p>Command that wants to change the name of the contact and requires the new contact name to do that</p>

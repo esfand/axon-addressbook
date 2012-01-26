@@ -16,7 +16,7 @@
 
 package org.axonframework.sample.app.api;
 
-import org.springframework.util.Assert;
+//import org.springframework.util.Assert;
 
 /**
  * <p>Removes the address with the provided type from the contacts address list</p>

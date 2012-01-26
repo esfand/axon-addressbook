@@ -16,7 +16,7 @@
 
 package org.axonframework.sample.app.api;
 
-import org.springframework.util.Assert;
+//import org.springframework.util.Assert;
 
 /**
  * <p>Create a new contact with the provided name</p>

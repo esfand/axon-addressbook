@@ -16,18 +16,17 @@
 
 package org.axonframework.sample.app.query;
 
-import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
-
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import java.util.List;
+//import org.springframework.stereotype.Repository;
+//import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author Allard Buijze
  */
-@Repository
-@Transactional(readOnly = true)
+//@Repository
+//@Transactional(readOnly = true)
 public class ContactRepositoryImpl implements ContactRepository {
 
     @PersistenceContext

@@ -16,7 +16,7 @@
 
 package org.axonframework.sample.app.api;
 
-import org.springframework.util.Assert;
+//import org.springframework.util.Assert;
 
 /**
  * <p>Registers the provided address with the contact as represented by the provided contact identifier. If the contact

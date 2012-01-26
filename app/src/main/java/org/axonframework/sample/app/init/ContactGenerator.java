@@ -16,24 +16,23 @@
 
 package org.axonframework.sample.app.init;
 
+import java.util.UUID;
+import java.util.concurrent.atomic.AtomicBoolean;
 import org.axonframework.commandhandling.CommandBus;
 import org.axonframework.commandhandling.GenericCommandMessage;
 import org.axonframework.sample.app.api.AddressType;
 import org.axonframework.sample.app.api.CreateContactCommand;
 import org.axonframework.sample.app.api.RegisterAddressCommand;
-import org.springframework.context.ApplicationEvent;
-import org.springframework.context.ApplicationListener;
-import org.springframework.context.event.ContextRefreshedEvent;
-
-import java.util.UUID;
-import java.util.concurrent.atomic.AtomicBoolean;
+//import org.springframework.context.ApplicationEvent;
+//import org.springframework.context.ApplicationListener;
+//import org.springframework.context.event.ContextRefreshedEvent;
 
 /**
  * <p>Uses the sample api to create some sample content</p>
  *
  * @author Allard Buijze
  */
-public class ContactGenerator implements ApplicationListener {
+public class ContactGenerator /*implements ApplicationListener*/ {
 
     private CommandBus commandBus;
     private AtomicBoolean initialized = new AtomicBoolean();
@@ -41,13 +40,13 @@ public class ContactGenerator implements ApplicationListener {
     public ContactGenerator(CommandBus commandBus) {
         this.commandBus = commandBus;
     }
-
+/*
     public void onApplicationEvent(ApplicationEvent event) {
         if (!initialized.get() && event instanceof ContextRefreshedEvent) {
             initializeData();
         }
     }
-
+*/
     public void initializeData() {
         if (initialized.compareAndSet(false, true)) {
             CreateContactCommand commandAllard = new CreateContactCommand();
